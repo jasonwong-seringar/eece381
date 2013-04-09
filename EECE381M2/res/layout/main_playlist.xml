@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/sync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSync"
+            android:text="Get Library" />
+
+        <Button
+            android:id="@+id/sendlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendPlaylist"
+            android:text="Send Playlist" />
+
+    </LinearLayout>
+
+<com.eece381.M2remote.DragNDropListView
+  	android:id="@id/android:list"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  </com.eece381.M2remote.DragNDropListView>
+</LinearLayout>
